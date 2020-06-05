@@ -16,11 +16,15 @@ function App() {
   return (
     <div className="App">
       <header>
-        <button onClick={handleClick} />
+        <button onClick={handleClick}> Arrange the order ! </button>
       </header>
       <h1>High Scores per Country</h1>
       {allCountryScores.map((element) => (
-        <HighScoreTable name={element.name} data={element.scores} isAscending={isAscending}/>
+        <HighScoreTable
+          name={element.name}
+          data={element.scores}
+          isAscending={isAscending}
+        />
       ))}
     </div>
   );
